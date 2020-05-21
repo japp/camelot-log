@@ -17,6 +17,12 @@ Descargar el codigo de git y entrar en el directorio. Después instalar:
 Esto instala el ejecutable ``camelot-log``. Para instalarlo globalmente debe usarse `sudo`.
 
 
+Requisitos
+----------
+
+* Python 3.4 (mejor 3.6)
+* astropy
+
 Uso básico
 ----------
 
