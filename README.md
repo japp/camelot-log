@@ -26,4 +26,4 @@ Ver ayuda
 
 Hacer el log de todos los directorios base, actualizando solo los nuevos FITS.
 
-    $ camelot-log --help
+    $ camelot-log 

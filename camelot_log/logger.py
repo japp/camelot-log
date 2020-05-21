@@ -200,6 +200,10 @@ def create_index(directory):
         content += "      <li  class='list-group-item'><a href='{subdir}/camelot-log.html'>{subdir}</a></li>\n".format(subdir=basename(subdir))
     content += "    </ul>\n"
     
-    index = Path(directory + "/index.html")
+    index_filename = Path(directory + "/index.html")
 
-    index.write_text(template.format(title=directory_base, datetime=now, content=content))
+    with open(index_filename, "w") as f_out:
+        f_out.write(template.format(title=directory_base, datetime=now, content=content))
+    
+    # For python3.5+
+    #index.write_text(template.format(title=directory_base, datetime=now, content=content))
